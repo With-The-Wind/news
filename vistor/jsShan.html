@@ -1,0 +1,63 @@
+<div class="main"  ng-controller='shanCtrl'>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/shanpin1.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/shanpin2.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/shanpin3.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/shanpin4.png" alt="">
+        <div class="enter-main">
+          <span>进入简书</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-pass">
+      <span>跳过</span>
+    </div>
+  </div>
+  <div class="loading">
+    <div class="loading_title"><span>简书</span></div>
+    <input type="text" class="loading_users" value="手机号或邮箱">
+    <input type="text" class="loading_password" value="密码">
+    <div class="loading_enter"><span>登录</span></div>
+    <div class="loading_others">
+      <div class="loading_ot_random"><span>使用其他方式登录</span></div>
+      <div class="loading_ot_down">
+        <div class="loading_others_loading loading_loading"></div>
+        <div class="loading_others_loading"></div>
+        <div class="loading_others_loading"></div>
+        <div class="loading_others_loading"></div>
+        <div class="loading_others_loading"></div>
+      </div>
+    </div>
+    <div class="loading_register">
+      <span class="lr_register">注册简书账号</span>
+      <span class="lr_register_span"></span>
+      <span class="lr_random">随便看看</span>
+    </div>
+  </div>
+  <div class="register">
+      <div class="loading_title"><span>简书</span></div>
+      <div class="register_warpping">
+        <div class="includer"><span>手机号或与邮箱</span></div>
+        <input type="text" class="register_user register_change" maxlength="20" ng-model="value">
+      </div>
+      <div class="register_warpping">
+        <div class="includer"><span>密码</span></div>
+        <input type="text" class="register_password_one register_password register_change" maxlength="18" ng-model="pass1">
+      </div>
+      <div class="register_warpping">
+        <input type="text" class="register_password_two register_password register_change" maxlength="18" ng-model="pass2">
+        <div class="eyes"></div>
+      </div>
+    <div class="register_finished" ng-show="pass1===pass2" ng-click="change(value,pass1,pass2)" ng-click="toggle()"><a href="#/server">确定</a></div>
+    <div class="register_finished" ng-show="pass1!==pass2" ng-click="change(value,pass1,pass2)"><a href="#">确定</a></div>
+  </div>
+</div>

@@ -1,0 +1,107 @@
+<div class="personal" ng-controller="personal" ng-class="{'active':togg}">
+  <div class="personal_header"><span>我的</span></div>
+  <ul class="collection">
+   <li class="collection-item avatar person">
+     <div class="circle"></div>
+     <p>kop</p>
+     <span class="secondary-content">
+       <span class="number pe-n"></span>
+       <div class="zhishi pe-n"></div>
+     </span>
+   </li>
+   <div class="personal_up">
+     <li class="collection-item avatar person-one">
+       <div class="circle"></div>
+       <p>公开文章</p>
+       <span class="secondary-content">
+         <span class="number pe-n">0</span>
+         <div class="zhishi pe-n"></div>
+       </span>
+     </li>
+     <li class="collection-item">
+       <div class="circle"></div>
+       <p>私密文章</p>
+       <span class="secondary-content">
+         <span class="number pe-n">0</span>
+         <div class="zhishi pe-n"></div>
+       </span>
+     </li>
+     <li class="collection-item avatar person-one">
+       <div class="circle"></div>
+       <p>我的收藏</p>
+       <span class="secondary-content">
+         <span class="number pe-n">0</span>
+         <div class="zhishi pe-n"></div>
+       </span>
+     </li>
+     <li class="collection-item">
+       <div class="circle"></div>
+       <p>喜欢的文章</p>
+       <span class="secondary-content">
+         <span class="number pe-n">0</span>
+         <div class="zhishi pe-n"></div>
+       </span>
+     </li>
+     <li class="collection-item up_last">
+       <div class="circle"></div>
+       <p>我的钱包</p>
+       <span class="secondary-content">
+         <span class="number pe-n">0</span>
+         <div class="zhishi pe-n"></div>
+       </span>
+     </li>
+   </div>
+   <div class="personal_up">
+     <li class="collection-item avatar night">
+       <div class="circle"></div>
+       <p>夜间模式</p>
+       <span class="secondary-content" ng-click="togg=!togg">
+         <div class="night-level"></div>
+         <div class="night-circle" ng-class="{'active':togg}" ng-init="togg=false"></div>
+       </span>
+     </li>
+     <li class="collection-item">
+       <div class="circle"></div>
+       <p>浏览记录</p>
+       <span class="secondary-content">
+         <span class="number pe-n"></span>
+         <div class="zhishi pe-n"></div>
+       </span>
+     </li>
+     <li class="collection-item avatar person-one">
+       <div class="circle"></div>
+       <p>通用设置</p>
+       <span class="secondary-content">
+         <span class="number pe-n"></span>
+         <div class="zhishi pe-n"></div>
+       </span>
+     </li>
+     <li class="collection-item">
+       <div class="circle"></div>
+       <p>分享简书</p>
+       <span class="secondary-content">
+         <span class="number pe-n"></span>
+         <div class="zhishi pe-n"></div>
+       </span>
+     </li>
+     <li class="collection-item">
+       <div class="circle"></div>
+       <p>意见反馈</p>
+       <span class="secondary-content">
+         <span class="number pe-n"></span>
+         <div class="zhishi pe-n"></div>
+       </span>
+     </li>
+     <li class="collection-item up_last">
+       <div class="circle"></div>
+       <p>觉得不错，给个好评吧！</p>
+       <span class="secondary-content">
+         <span class="number pe-n"></span>
+         <div class="zhishi pe-n"></div>
+       </span>
+     </li>
+     </li>
+   </div>
+  </ul>
+  <js-footer></js-footer>
+</div>

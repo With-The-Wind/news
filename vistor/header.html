@@ -1,0 +1,36 @@
+<div class="main-header active" ng-controller="header">
+  <div class="mh_left"></div>
+  <div class="mh_center">
+    <div class="row">
+       <div class="col s12">
+         <ul class="tabs">
+           <li class="tab col s6 ss"><a href="">
+             <span class="mh_c_left" ng-click="toggle=true" ng-class="{'active':toggle}">文章</span>
+           </a></li>
+           <li class="tab col s6"><a href="">
+             <span class="mh_c_right" ng-click="toggle=false" ng-class="{'active':!toggle}">专题</span>
+           </a></li>
+         </ul>
+       </div>
+     </div>
+     <div class="center-center"></div>
+  </div>
+  <div class="mh_right"></div>
+  <div class="swiper-container" ng-show="toggle===true" ng-init="toggle=true">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="">热门</a></div>
+      <div class="swiper-slide"><a href="">新上榜</a></div>
+      <div class="swiper-slide"><a href="">日报</a></div>
+      <div class="swiper-slide"><a href="">七日热门</a></div>
+      <div class="swiper-slide"><a href="">三十日热门</a></div>
+      <div class="swiper-slide"><a href="">市集</a></div>
+      <div class="swiper-slide"><a href="">有奖活动</a></div>
+      <div class="swiper-slide"><a href="">简书出版</a></div>
+      <div class="swiper-slide"><a href="">简书博客</a></div>
+    </div>
+  </div>
+  <div class="special" ng-show="toggle===false">
+    <div class="spe_hot"><span>热门</span></div>
+    <div class="spe_recommend"><span>推荐</span></div>
+  </div>
+</div>
